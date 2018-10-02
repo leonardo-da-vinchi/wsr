@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+img {
+	height: 200px;
+}
+
+section {
+padding-top: 200px;	
+	position: relative;
+	
+}
+
+input {
+	position: absolute;
+	clip: rect(0,0,0,0);
+	overflow: hidden;
+}
+
+img {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+label {
+	display: inline-block;
+	overflow: hidden;
+	height: 30px;
+	width: 30px;
+	background: gold;
+	border-radius: 50%;
+}
+input:checked+label{
+	background: green;
+}
+input:checked+label+img{
+	display: block;
+}

@@ -1,0 +1,270 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+box-sizing: border-box;
+color: white;
+font-family: sans-serif;
+font-size: 24px;
+}
+
+html{
+font-size: 24px;
+}
+
+body {
+background: #2d2d2d;
+}
+
+header {
+display: flex;
+width: 100%;
+}
+
+.logo a {
+text-decoration: none;
+font-size: 3rem;
+}
+
+h1 {
+font-weight: bolder;
+text-transform: uppercase;
+font-family: sans-serif;
+margin: 0;
+text-align: center;
+margin: 2rem auto 12% auto;
+}
+
+header p {
+margin: 1rem 0 3rem 0;
+width:  25%;
+font-size: 1.5rem;
+font-family: sans-serif;
+}
+
+header .exit {
+width: 25%;
+}
+
+.exit a {
+display: block;
+text-align: center;   
+text-decoration: none;
+font-size: 1.5rem;
+width: 6rem;
+height: 3rem;
+line-height: 3rem;
+background: #777;
+float: right;
+ font-family: sans-serif;   
+}
+
+main {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
+    
+}
+
+.devices, .sensors {
+width: 20%;
+}
+
+.rooms{   
+width: 50%;
+border: 3px solid white;
+}
+
+h2 {
+margin: 7px 0;
+text-align: center;
+font-size: 1.25rem;
+border-bottom: 3px solid white;
+}
+
+.devices h2, .sensors h2 {
+margin: 0;
+padding: 2% 0 0 0;
+border: 3px solid white;
+border-bottom: none;
+}
+
+.list {
+padding: 0 6%; 
+margin: 0;
+border: 3px solid white; 
+}
+
+.list ul {
+list-style: none;
+padding: 5%;
+}
+
+.list li {
+margin: 0 0 5% 0;
+font-size: 1.2rem;
+}
+
+.showAll {
+display: block;
+width: 70%;
+height: 5%;
+text-align: center;
+
+border: 3px solid white;
+    border-top: none;
+}
+
+.showAll a{
+display: block;
+margin: 0;
+ padding: 4% 0; 
+font-size: 1rem;
+text-decoration: none;
+}
+
+.right {
+float: right;
+}
+
+.left {
+float: left;
+}
+
+.rooms-inside-container{
+display: flex;
+flex-flow: row wrap;
+width: 100%;
+margin: 5% auto;
+justify-content: space-around;
+   
+}
+
+.room-element {
+width: 40%;
+border: 1px solid white;
+margin: 0 3% 3% 3%;
+}
+
+.room-element a{
+text-decoration: none;
+}
+
+.room-element p {
+text-align: center;
+margin: 10px 0;
+font-size: 1rem;
+}
+
+.img-room {
+width: 80%;
+margin: auto;
+}
+
+.img-room img {
+width: 100%;
+
+}
+
+
+@media all and (max-width: 1300px) {
+    main{  
+    flex-wrap: wrap;
+    margin: auto;
+    }
+    .devices, .sensors{
+    width:  16rem;
+    margin: 5% 0;
+    }
+    .rooms {
+    width: 100%;
+    order:-1;
+    }
+}
+
+@media all and (max-width: 820px) {
+    html{
+    font-size: 20px;
+    }
+}
+    
+    @media all and (max-width: 655px) {
+        html {
+        font-size: 29px;
+        }
+        main{
+        justify-content: space-around;
+        }
+        .room-element{
+        width: 80%;
+        }
+        header{
+        flex-direction: column-reverse;
+        }
+
+        header p{
+        display: none;
+        }
+ 
+        header .exit{
+            width: 6rem;
+            margin: auto;
+        }
+        
+        header a{
+        width: 100%;
+        float: none;
+        margin: auto;
+        }
+        .right, .left{
+        margin: auto;
+        float: none;
+        }
+    }
+
+@media all and (min-width: 1900px){
+    html{
+    font-size: 2vh;
+    }

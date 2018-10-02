@@ -1,0 +1,212 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+box-sizing: border-box;
+color: white;
+font-family: sans-serif;
+}
+
+html{
+font-size: 24px;
+}
+
+body {
+background: #2d2d2d;
+}
+
+header {
+display: flex;
+width: 100%;
+}
+
+.logo a {
+text-decoration: none;
+font-size: 3rem;
+}
+
+h1 {
+font-weight: bolder;
+text-transform: uppercase;
+font-family: sans-serif;
+margin: 0;
+text-align: center;
+margin: 2rem auto 12% auto;
+}
+
+header p {
+margin: 1rem 0 3rem 0;
+width:  25%;
+font-size: 1.5rem;
+font-family: sans-serif;
+}
+
+header .exit {
+width: 25%;
+}
+
+.exit a {
+display: block;
+text-align: center;   
+text-decoration: none;
+font-size: 1.5rem;
+width: 6rem;
+height: 3rem;
+line-height: 3rem;
+background: #777;
+float: right;
+ font-family: sans-serif;   
+}
+main {
+width: 60%;
+    margin: auto;
+    border: 3px solid white;
+    border-top: none;
+}
+
+h2 {
+margin: 0.25rem 0 0 0;
+text-align: center;
+font-size: 1.25rem;
+border-bottom: 3px solid white;
+}
+
+a {
+text-decoration: none;
+}
+.container {
+display: flex;
+ border-top: 3px solid white;   
+}
+
+.devices, .sensors {
+width: 40%;
+}
+
+.names-room {
+width: 20%;
+display: flex;
+}
+
+.devices, .names-room  {
+border-right: 3px solid white;
+}
+
+.container ul {
+list-style-type: none;
+    padding: 0 5px;
+}
+
+.container li {
+display: flex;
+margin-bottom: 10px;
+}
+
+.container li p {
+    flex-grow: 1;
+    float: left;
+    margin: 0;
+    line-height: 50px;
+}
+
+.container li a {
+margin-left: auto;
+margin-right: 
+text-decoration: none;
+width: 5rem;
+display: flex;       
+}
+
+
+.container li a .img-switch {
+height: 2.08rem;
+}
+
+span {
+display: block;
+width: 40%;
+text-align: center;
+float: right;
+ margin: 0.5rem 0;   
+}
+
+.names-room h2 {
+ margin: auto;   
+border: none;
+}
+
+.names-room.first{
+position: relative;
+}
+
+.names-room.first:before {
+    display: block;
+    position: absolute;
+    content: "НА ГЛАВНУЮ";
+    width: 100%;
+    height: 1.25rem;
+    font-size: 1.25rem;
+    margin-top: 0.25rem;
+    text-align: center;
+    border-bottom: 3px solid white;
+}
+
+
+@media all and (max-width: 1680px){
+    main{
+    width: 1000px;
+    }   
+}
+
+@media all and (max-width: 1000px){
+main{
+    width: 100%;
+    }  
+}
+@media all and (min-width: 1913px)
+{
+    html {
+    font-size: 2vh;
+    }
+}
