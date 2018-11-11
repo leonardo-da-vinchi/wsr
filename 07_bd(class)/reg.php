@@ -16,7 +16,7 @@ if ($connect) {
     $data = $connect -> query("SELECT login, email FROM Users WHERE login = '".$login."' AND email = '".$email."' ");
     $users = $data->fetch_all(MYSQLI_ASSOC);
     $user_login = $users[0]['login'];
-    $user_email = $users[1]['email'];
+    $user_email = $users[0]['email'];
     var_dump($users);
 }
 
