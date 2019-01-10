@@ -1,0 +1,7 @@
+fieldset{
+    display: none;
+}
+
+input[value = "Sign up"]{
+    display: none;
+}

@@ -1,0 +1,39 @@
+form {
+    margin: auto;
+    width: 30%;
+}
+
+.change, .cancel-change {
+  margin-left: 70%;  
+}
+
+.change, .cancel-change, input[value="Exiiiiit"] {
+    cursor: pointer;
+}
+
+.sex-select, .subs-change, .pass, .submit {
+    display: none;
+}
+
+input, select, .select-items, .sex>span, .subscribes>span {
+    float: right;
+}
+
+input[type="checkbox"], input[type="radio"], input[value="Exiiiiit"] {
+    float: none;
+}
+
+form:nth-of-type(1) {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    width: 10px;
+}
+
+form:nth-of-type(2) * {
+    border: none;
+}
+
+input {
+    text-align: right;
+}
