@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!empty($_SESSION["id"])) {
-    echo "Hello< ".$_SESSION['login'];
+    echo "Hello ".$_SESSION['login'];
 }
 ?>
 
@@ -47,13 +47,13 @@ if (!empty($_SESSION["id"])) {
         </fieldset>
         
         <fieldset>
-        <input type="checkbox" name="subscribes[news]" value = "news" id="news">
+        <input type="checkbox" name="subscribes[news]" value = "1" id="news">
         <label for="news">news</label>
         
-        <input type="checkbox" name="subscribes[events]" value = "events" id="events">
+        <input type="checkbox" name="subscribes[events]" value = "1" id="events">
         <label for="events">events</label>
         
-         <input type="checkbox" name="subscribes[games]" value = "games" id="games">
+         <input type="checkbox" name="subscribes[games]" value = "1" id="games">
         <label for="games">games</label>
          <br>
          </fieldset>

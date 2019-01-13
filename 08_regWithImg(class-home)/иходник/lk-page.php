@@ -18,7 +18,7 @@
   <input class="games-check" type="text" value="<?=$games?>" hidden>
   <input class="news-check" type="text" value="<?=$news?>" hidden>
   <input class="sex-check" type="text" value="<?=$sex?>" hidden>
-  <input class="business-check" type="text" value="schoolboy" hidden>
+  <input class="business-check" type="text" value="<?=$business?>" hidden>
    
     <form action="backforLK.php" method="POST">
     <label for="email">E-mail: </label>
