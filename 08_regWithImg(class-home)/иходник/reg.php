@@ -41,7 +41,7 @@ else {
   $password = $_POST["passwordin"];
   require "bd.php";
   if ($connect) {
-    $data = $connect->query("SELECT `id`, `login`, `email`, `sex`, `age`, `business` FROM `Users` WHERE password = '".$password."' AND email = '".$email."' ");
+    $data = $connect->query("SELECT `id`, `login`, `email`, `sex`, `age`, `business`, `avatar` FROM `Users` WHERE password = '".$password."' AND email = '".$email."' ");
     if ($data == null) {
         die("<p style='text-align: center; color: red'> Такого пользователя нет </p>");
     }

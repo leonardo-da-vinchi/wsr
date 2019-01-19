@@ -1,0 +1,24 @@
+form {
+    width: 50%;
+    margin: auto;
+}
+
+.sign-up {
+    display: none;
+}
+
+/* .sign-in_checked:checked~.sign-in{
+    display: block;
+}
+
+.sign-in_checked:checked~.sign-up{
+    display: none; 
+}
+
+.sign-up_checked:checked~.sign-up{
+    display: block;
+}
+
+.sign-up_checked:checked~.sign-in{
+    display: none; 
+} */
