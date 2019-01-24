@@ -1,0 +1,38 @@
+ErrorDocument 404 /er/404.html
+
+IndexIgnore */*
+RewriteEngine on 
+
+RewriteCond %{REQUEST_URI} !^/(web)
+RewriteRule ^images/(.*)$ web/img/$1 [L]
+RewriteRule (.*) /web/$1
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /web/index.php
+
+
+
+#AddDefaultCharset utf-8
+#AddType 'text/html; charset=utf-8' .html .htm .shtml
+#Options +FollowSymLinks
+#IndexIgnore */*
+#RewriteEngine on
+
+#RewriteCond %{REQUEST_URI} !^/(web)
+#RewriteRule ^assets/(.*)$ /web/assets/$1 [L]
+#RewriteRule ^css/(.*)$ web/css/$1 [L]
+#RewriteRule ^fonts/(.*)$ web/fonts/$1 [L]
+#RewriteRule ^js/(.*)$ web/js/$1 [L]
+#RewriteRule ^images/(.*)$ web/images/$1 [L]
+#RewriteRule ^robots.txt web/robots.txt [L]
+#RewriteRule (.*) /web/$1
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /web/index.php
+
+#RewriteRule wsr0901/monfrik/edik/aram/abrosya/nastya.php dauni [L]
+#RewriteCond %{HTTP_REFERER} .
+#RewriteCond %{HTTP_REFERER} !^http://([^.]+\.)?wsr0901\. [NC]
+#RewriteCond request_uri /lol/lol.jpg$
+#RewriteRule /.(png | jpg | svg | gif)& /lol/lol.jpg [NC,L]

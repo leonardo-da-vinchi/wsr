@@ -9,7 +9,8 @@ if (sizeof($dataForm) == 2) {
     $password = $dataForm[1]['value'];
 
     if ($connect) {
-        $data = $connect->query("SELECT `id`, `login`, `email`, `sex`, `age`, `business`, `avatar` FROM `Users` WHERE password = '".$password."' AND email = '".$email."' ");
+        $data = $connect->query("SELECT `id`, `login`, `email`, `sex`, `age`, `business`, `avatar`
+                                 FROM `Users` WHERE password = '".$password."' AND email = '".$email."' ");
         if (empty($data)) {
             die("<p style='text-align: center; color: red'> Такого пользователя нет </p>");
         }
@@ -20,8 +21,8 @@ if (sizeof($dataForm) == 2) {
         $age = $users[0]['age'];
         $business = $users[0]['business'];
         $data_sub = $connect->query("SELECT `news`, `events`, `games` FROM `Subscribes` WHERE u_id = '".$id."' ");
-        $sub_id = $connect->insert_id;
         $subs = $data_sub->fetch_all(MYSQL_ASSOC);
+        $sub_id = $subs[0]['id'];
         $news = (bool)$subs[0]['news'];
         $events = (bool)$subs[0]['events'];
         $games = (bool)$subs[0]['games'];

@@ -1,0 +1,6 @@
+ErrorDocument 404 /er/404.html
+
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php
